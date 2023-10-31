@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment analysis</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Indexstyle.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+	<header class="title">
+      <div class="title-text">
+        <h2 class="big-text">	      Twitter Sentiment Analysis Using NLP</h2>
+		<a class="button" data-testid="minimal-menu-button-link" href="/signup/" class="sc-12a4lwh-1 clCPXl">Sign up</a>  
+	</div>
+    </header>
+<div class="main">
+	<h2>What is sentiment analysis ?</h2>
+	<br>
+	<p>Sentiment Analysis, also called opinion mining or emotion AI, is the process of determining whether a piece of writing is positive, negative, or neutral. A common use case for this technology is to discover how people feel about a particular topic. Sentiment analysis is widely applied to reviews and social media for a variety of applications. Companies leverage sentiment analysis of tweets to get a sense of how customers are talking about their products and services, get insights to drive business decisions, and identify product issues and potential PR crises early on.
+</p>
+</div>
+<div class="main3">
+	<h1> Where we can use Aentiment Analysis.</h1>
+<br>
+</div>
+<div class="main2"> 
+	<h3>1. Social Media Monitoring:
+	</h3>
+	<br>
+	<p>By sifting the data like online reviews, comments, tweets, and discussions available through social media, many deductions can be made about the ongoing trends and how the audience perceives them. Social media monitoring becomes helpful in this situation. The Sentiment Analysis tool may surface social media sentiments for Natural Language Processing, generating insights by mining customers’ comments about a company. A more focused, sympathetic response to consumers may come from this practice. Also, one may examine a client’s interactions across different platforms using this information and make the required adjustments because, at times, people react more favorably than others on some channels.
+
+	</p>
+	<br>
+</div>
+
+<div class="main4">
+     <h3>2. Customer Service Request & Response:</h3>
+	 <br>
+	<p>
+		The firm can use sentiment analysis technologies to see what to look for in consumer text, such as conversations or social media posts. It goes beyond simply looking for valuable and harmful keywords. Individual customers’ speech patterns develop over time and surface in groups sharing similar views, such as those congregating in online forums for consumers to discuss goods and services.</p>
+</div>
+<div class="CM">
+	<img src="/static/x2.png" height="300px" alt="">
+</div>
+</div>	
+<div class="main5">
+	<h2>
+		3. Decision-Making for Investments
+
+	</h2>
+	<br>
+</div>
+<div class="main6"><p>The financial market’s high volatility and psychological elements, such as user perceptions of policy changes, new investments, or natural calamities, significantly impact how stock prices fluctuate. Sentiment Analysis of such data and financial news can aid in predicting profitable options in an otherwise unpredictable scenario. It is imperative that traders have lightning-fast reflexes to execute deals in nanosecond increments. A variety of causes influence the market’s sentiments. It has been observed that there is a correlation between changes in stock price and the polarity of the most popular comments mentioning a company’s stock symbol.</p></div>
+<div class="main7">
+	<img src="/static/x3.png" height="350px" alt="">
+</div>
+<div class="mainsection">
+		<div class="sub1">
+			<div class="container">
+      		<div class="row">
+				<div class="col-sm-12">
+		          <div class="card">
+		            <div class="card-body">
+		              <h5 class="card-title">Phrase level sentiment analysis</h5>
+		              <form action="/predict" method="post">
+						<div class="form-group">
+							<input type="text" class="form-control" name="query" placeholder="Enter query string" autocomplete="off">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="num" placeholder="Enter Number of tweets " autocomplete="off">
+						</div>
+						<button name="submit" type="submit" class="btn btn-primary" data-submit="...Sending">Predict !</button>
+		              </form>    
+		            </div>
+		          </div>
+		        </div>
+			</div>
+			</div>
+
+    		<div class="container">
+      		<div class="row">
+		        <div class="col-sm-12">
+		          <div class="card">
+		            <div class="card-body">
+		              <h5 class="card-title">Sentence level sentiment analysis</h5>
+		              <form action="/predict1" method="post">
+		                <div class="form-group">
+		                  <input type="text" class="form-control" name="txt" placeholder="Example sentence" autocomplete="off">
+		                </div>
+		                <button name="submit" type="submit" class="btn btn-primary" data-submit="...Sending">Predict !</button>
+		              </form>
+		            </div>
+		          </div>
+		        </div>				 
+			</div>
+			</div>
+		</div>
+
+		<div class="sub2">
+			<img  id="twitterimg"  src="{{url_for('static',filename = 'Twitter_bird.png')}}" >
+		
+	</div>
+	<div>
+	<img id="he" alt="Image Text Module Templates" loading="lazy" role="presentation" src="https://images.ctfassets.net/co0pvta7hzrh/5JCthDmpE2zSZcD60EFv1i/3ccbc9198fa894c96d2a0fd0747de5d7/bad7cc4e-templates2_1000000000000000000028.png?fm=webp" width="885" height="736" class="sc-8mrc82-7 beUdDj">
+    </div>
+</body>
+</html>
